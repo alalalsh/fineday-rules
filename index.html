@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Бортовой самописец — правила игры · Fine Day 2026</title>
+<meta name="description" content="Один посадочный — один корешок — один вопрос к машине. Правила розыгрыша Fine Day 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0A484D;--sky:#D7F7F9;--orange:#FF5000;--muted:#5d7f82;--line:#E3F4F6;--navy:#16204F}
+*{box-sizing:border-box}
+body{margin:0;font-family:Onest,Arial,sans-serif;color:var(--ink);line-height:1.55;background-color:var(--sky);background-image:radial-gradient(ellipse 360px 130px at 10% 6%,#fff9,transparent 70%),radial-gradient(ellipse 440px 150px at 88% 26%,#fff9,transparent 70%),radial-gradient(ellipse 400px 140px at 14% 68%,#fff8,transparent 70%),radial-gradient(ellipse 460px 150px at 84% 92%,#fff9,transparent 70%)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{padding:28px 0 0;font-weight:800;font-size:22px}
+.tag{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:14px;font-weight:600;margin-top:36px}
+h1{font-size:clamp(38px,7vw,72px);line-height:1.04;margin:16px 0;font-weight:600}
+.lead{font-size:clamp(18px,2.4vw,24px);color:var(--orange);font-weight:700;margin:0 0 32px}
+h2{font-size:clamp(26px,4vw,36px);margin:56px 0 20px;font-weight:600}
+.box,.card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:0 8px 30px rgba(10,72,77,.06)}
+.box p{margin:0;font-size:18px}
+.cap{margin:14px 0 0;font-size:14px;color:var(--muted)}
+.scroll{overflow-x:auto;padding-bottom:4px}
+.ticket{display:grid;grid-template-columns:150px 1fr 1.05fr 190px;min-width:900px;border:1px solid #ccd;border-radius:10px;overflow:hidden;background:#fff;color:#111;font-size:11px}
+.ticket>div{padding:0 14px 14px;border-left:1.5px dashed #aab}
+.ticket>div:first-child{border-left:0}
+.th{background:var(--navy);color:#fff;margin:0 -14px 14px;padding:10px 14px;font-weight:800;letter-spacing:.06em;font-size:13px;display:flex;justify-content:space-between;gap:8px;white-space:nowrap}
+.th small{font-weight:600;font-size:9px;letter-spacing:.1em;opacity:.8;display:block}
+.lab{font-size:8px;color:#555;letter-spacing:.08em;text-transform:uppercase;margin-top:8px}
+.val{font-weight:800;font-size:14px}
+.big{font-weight:800;font-size:26px;line-height:1.1}
+.route{display:flex;align-items:center;gap:10px}.route i{color:var(--orange);font-style:normal;font-size:24px}
+.stamp{margin-top:14px;border:1.5px dashed #99a;border-radius:10px;height:100px;display:grid;place-items:center;color:#889;font-size:9px;text-align:center}
+.panic{background:#000;color:#fff;border-radius:6px;text-align:center;font-weight:800;font-size:28px;letter-spacing:.14em;padding:10px 0;margin-top:16px}
+.qrs{display:flex;gap:10px;float:right}.qrs div{text-align:center;font-size:8px;font-weight:700}
+.qrs svg{display:block;width:76px;height:76px;border:1.5px solid #000;padding:3px;margin-bottom:3px}
+.how{font-weight:800;letter-spacing:.06em;font-size:14px;margin:4px 0 10px}
+.how~p{margin:0 0 6px;font-size:10px;color:#333}
+.lines{margin-top:12px}.lines i{display:block;border-bottom:1.5px solid #111;height:26px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.num{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--orange);color:#fff;font-weight:700}
+.card h3{margin:16px 0 8px;font-size:20px}.card p{margin:0;font-size:15px}
+.draw{display:grid;grid-template-columns:1fr 1.4fr;gap:18px}
+.when{background:var(--ink);color:#fff;border-radius:28px;padding:28px}
+.when small{color:#05E0E0;font-weight:700;letter-spacing:.08em}
+.when strong{display:block;font-size:30px;line-height:1.15;margin:10px 0}
+.when span{color:var(--sky)}.when em{display:block;margin-top:20px;font-style:normal;color:var(--orange);font-weight:700;font-size:24px}
+ol.list{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:14px}
+ol.list li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px 20px 18px 72px;position:relative}
+ol.list li::before{content:counter(s);position:absolute;left:20px;top:18px;width:36px;height:36px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-weight:700}
+ol.list b{display:block;font-size:18px}
+.quote{margin:56px 0 0;text-align:center;font-size:clamp(22px,3.6vw,34px);font-weight:600}.quote span{color:var(--orange)}
+footer{padding:32px 0 48px;text-align:center;color:var(--muted);font-size:14px}
+@media(max-width:860px){.grid{grid-template-columns:1fr 1fr}.draw{grid-template-columns:1fr}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<header>FineDay</header>
+<span class="tag">Fine Day 2026 · 23 октября, Москва</span>
+<h1>Бортовой самописец</h1>
+<p class="lead">Один посадочный — один корешок — один вопрос к машине.</p>
+<div class="box"><p>Весь день зал формулирует вопросы. Бортпроводница у лототрона проверяет наличие вопроса, ставит штамп и сама бросает корешок в прозрачный ящик. Это ритуал: <b>вопрос становится валютой дня</b>.</p></div>
+
+<h2>Пример посадочного талона</h2>
+<div class="box"><div class="scroll"><div class="ticket" role="img" aria-label="Пример посадочного талона Fine Day 2026">
+<div><div class="th"><span>FINEDAY<small>КОРЕШОК ПАССАЖИРА</small></span></div>
+<div class="lab">Рейс</div><div class="val">FD-2026</div><div class="lab">Дата</div><div class="val">23 ОКТ 2026</div>
+<div class="lab">Место</div><div class="val">10A</div><div class="lab">Выход</div><div class="val">A3</div>
+<div class="stamp">место под печать</div></div>
+<div><div class="th"><span>FINEDAY<small>АВИАЛИНИИ · FINE DAY 2026</small></span><span>ПОСАДОЧНЫЙ ТАЛОН</span></div>
+<div class="route"><div><div class="lab">Откуда</div><div class="big">СЕГОДНЯ</div></div><i>✈</i><div><div class="lab">Куда</div><div class="big">БУДУЩЕЕ</div></div></div>
+<div class="lab">Рейс · Дата · Начало посадки · Выход</div><div class="val">FD-2026 · 23 ОКТ 2026 · 14:30 · A3</div>
+<div class="lab">Место</div><div class="big">10A</div><div class="lab">Класс</div><div class="val">БИЗНЕС</div>
+<div class="panic">НЕ ПАНИКУЙТЕ</div></div>
+<div><div class="th"><span>FINEDAY</span><span>РОЗЫГРЫШ</span></div>
+<div class="how">КАК ПОПАСТЬ В РОЗЫГРЫШ</div>
+<p>1. Впишите на обороте корешка вопрос, на который у машины нет ответа.</p>
+<p>2. Бортпроводник оторвёт корешок по перфорации, поставит печать и опустит его в ящик.</p>
+<p>3. Основную часть талона оставьте себе: это ваш посадочный.</p>
+<p>4. В конце рейса бортпроводник вытянет номера из ящика. Приз вручается при предъявлении основной части талона.</p>
+<div class="qrs" id="qrs"></div></div>
+<div><div class="th"><span style="white-space:normal;font-size:10px">ВОПРОС, НА КОТОРЫЙ У МАШИНЫ НЕТ ОТВЕТА</span></div>
+<div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+</div></div>
+<p class="cap">Схема талона. У каждого талона уникальное посадочное место — оно участвует в розыгрыше. Вопрос пишется на корешке.</p></div>
+
+<h2>Как попасть в розыгрыш</h2>
+<div class="grid">
+<article class="card"><span class="num">1</span><h3>Получите талон</h3><p>На входе каждый получает посадочный талон. Место на нём уникально и участвует в розыгрыше. Дополнительные талоны можно получить на стендах.</p></article>
+<article class="card"><span class="num">2</span><h3>Напишите вопрос</h3><p>На корешке впишите вопрос, на который у машины нет ответа. Один посадочный — один корешок — один вопрос.</p></article>
+<article class="card"><span class="num">3</span><h3>Получите штамп</h3><p>Бортпроводница проверит вопрос, поставит печать и сама бросит корешок в лототрон — прозрачный ящик.</p></article>
+<article class="card"><span class="num">4</span><h3>Сохраните талон</h3><p>Основную часть талона с QR-кодами оставьте себе: она нужна для получения приза.</p></article>
+</div>
+
+<h2>Как пройдёт розыгрыш</h2>
+<div class="draw"><div class="when"><small>КОГДА</small><strong>После кофе-брейка</strong><span>на выступлении Андрея Демидова</span><em>5 подарков</em></div>
+<ol class="list"><li><b>Из шара достают 5 корешков</b>Вопросы читают вслух — каждый корешок уже проверен бортпроводницей.</li>
+<li><b>Спикеры отвечают</b>Вопрос, на который у машины нет ответа, получает ответ со сцены.</li>
+<li><b>Авторы выходят на сцену</b>Автор вытащенного вопроса получает право задать его со сцены. Приз вручается при предъявлении основной части талона.</li></ol></div>
+
+<p class="quote">Не паникуйте. <span>Задайте вопрос машине.</span></p>
+<footer>Fine Day 2026 · Бортовой самописец</footer></div>
+<script>
+(function(){var h='',n=0;['ЧАТ РЕЙСА','КТО ЭТИ ЛЮДИ'].forEach(function(t,k){var s=7+k*3,r='',N=21,i,j;
+function f(a,b){return a<7&&b<7||a<7&&b>=N-7||a>=N-7&&b<7}
+for(i=0;i<N;i++)for(j=0;j<N;j++){s=(s*1103515245+12345)&2147483647;var o=f(i,j)?((i%6==0||j%6==0||(i%6>1&&i%6<5&&j%6>1&&j%6<5&&i<7&&j<7))?1:(i>=N-7||j>=N-7?(i%6==0||j%6==0||(i%6>1&&i%6<5&&j%6>1&&j%6<5)):0)):(s>>8)%2;if(o)r+='<rect x="'+j+'" y="'+i+'" width="1" height="1"/>'}
+h+='<div><svg viewBox="0 0 21 21" shape-rendering="crispEdges">'+r+'</svg>'+t+'</div>'});
+document.getElementById('qrs').innerHTML=h})();
+</script></body></html>
